@@ -6,7 +6,7 @@ def download():
     link = link_input.get()
     
     if len(link) == 0:
-        messagebox.showwarning(title="Field Empty", message="Put a link in the text box before pressing 'Download'")
+        messagebox.showwarning(title="Field Empty", message="Put a Youtube Video link in the text box before pressing 'Download'")
     else:
         yt = YouTube(link)
         ys = yt.streams.get_highest_resolution()
